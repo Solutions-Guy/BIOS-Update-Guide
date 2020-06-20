@@ -42,10 +42,12 @@ Confirm Uploaded BIOS Image successfully
 
 * All three attributes in the payload may also take false as values. Below is the alternative JSON Payload.
 
-'''JSON Payload:
+'''Javascript
+JSON Payload:
 {"PreserveME":false, 
  "PreserveNVRAM":false,
- "PreserveSMBIOS":false}'''
+ "PreserveSMBIOS":false}
+ '''
  
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Update%20BIOS.PNG)
 Update BIOS
