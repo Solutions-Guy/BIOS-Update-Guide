@@ -34,7 +34,7 @@ JSON Payload:
 **Upload BIOS Image**
 * Upload the BIOS image by posting the following request and expect to receive a “Successfully Completed Request” response. The content type must be “multipart/form-data”. The body must be “Form”, and enter “bios” as name, select “File” and choose the BIOS image from your local drive. 
 
-```JSON
+```yml
 Method: [POST]
 
 URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.Upload
@@ -52,22 +52,28 @@ URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/
 
 **Optional JSON Payloads**
 
-* Method: [POST]
-* URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.Update
-* JSON Payload:
+```yml
+Method: [POST]
+
+URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.Update
+
+JSON Payload:
 {"PreserveME":true, 
  "PreserveNVRAM":true,
  "PreserveSMBIOS":true}
- 
- Note: Preserving the Management Engine, NVRAM, and SMBIOS will reset the BIOS to factory defaults.
+```
+
+Note: Preserving the Management Engine, NVRAM, and SMBIOS will reset the BIOS to factory defaults.
 
 * All three attributes in the payload may also take false as values. Below is the alternative JSON Payload.
 
+```yml
 JSON Payload:
 {"PreserveME":false, 
  "PreserveNVRAM":false,
  "PreserveSMBIOS":false}
- 
+```
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Update%20BIOS.PNG)
 <p align="center">Update BIOS</p>
 
@@ -77,10 +83,14 @@ JSON Payload:
 **2.5	Check BIOS Update Status**
 
 * Check the BIOS Update progress by invoking the following request and expect a response with information about the update progress, such as the percentage of completion.
-* Method: [GET]
-* URL: Use one of types of URIs from the response body for the ongoing Task
-* https://$BMC_IP/redfish/v1/TaskMonitor/[###########]
-* https://$BMC_IP/redfish/v1/TaskService/Tasks/#
+
+```yml
+Method: [GET]
+
+URL: Use one of types of URIs from the response body for the ongoing Task
+https://$BMC_IP/redfish/v1/TaskMonitor/[###########]
+https://$BMC_IP/redfish/v1/TaskService/Tasks/#
+```
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20Update%20Progress%20with%20Task%20Monitor%20to%20Find%20Ongoing%20Task%23.PNG)
 <p align="center">Check Update Progress with Task Monitor to find ongoing task#</p>
@@ -98,8 +108,13 @@ JSON Payload:
 <p align="center">Check BIOS Update Progress (100%)</p>
 
 * Confirm the BIOS version by invoking the following request and expect a response with the BIOS version
-* Method: [GET]
-* URL: https://172.31.32.138//redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/
+
+```yml
+Method: [GET]
+
+URL: https://172.31.32.138//redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/
+```
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Get%20BIOS%20Version.PNG)
 <p align="center">Get BIOS Version</p>
 
