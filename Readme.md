@@ -3,7 +3,9 @@
 * Method: [GET]
 * URL: https://$BMC_IP/redfish/v1/Systems/1
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20BIOS%20from%20Talend%20Chrome-based%20App.png)
+<p align="center">
 Check BIOS from Talend Chrome-based app
+</p>
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20BIOS%20Version%20from%20Response.PNG)
 Confirm BIOS Version from Response
 
@@ -42,12 +44,10 @@ Confirm Uploaded BIOS Image successfully
 
 * All three attributes in the payload may also take false as values. Below is the alternative JSON Payload.
 
-'''Javascript
 JSON Payload:
 {"PreserveME":false, 
  "PreserveNVRAM":false,
  "PreserveSMBIOS":false}
- '''
  
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Update%20BIOS.PNG)
 Update BIOS
