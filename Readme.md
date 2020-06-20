@@ -1,4 +1,4 @@
-**Check current BIOS Version**
+**Check Current BIOS Version**
 * Check the current BIOS version by invoking the following request and expect to receive a JSON response with the BIOS version.
 
 ```yml
@@ -43,10 +43,10 @@ URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/
 <p align="center">Upload BIOS Image</p>
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Uploading%20BIOS%20Image%20in%20Progress.PNG)
-<p align="center">Uploading BIOS Image in progress</p>
+<p align="center">Uploading BIOS Image in Progress</p>
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20Uploaded%20BIOS%20Imae%20Succesfully.PNG)
-<p align="center">Confirm Uploaded BIOS Image successfully</p>
+<p align="center">Confirm Uploaded BIOS Image Successfully</p>
 
 * Update BIOS by invoking the following request with the following payload and expect to receive a “Successfully Completed Request” response as this action will invoke an ongoing task. In the response, you can find the task information in the response body and task monitor in the response header
 
@@ -93,7 +93,7 @@ https://$BMC_IP/redfish/v1/TaskService/Tasks/#
 ```
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20Update%20Progress%20with%20Task%20Monitor%20to%20Find%20Ongoing%20Task%23.PNG)
-<p align="center">Check Update Progress with Task Monitor to find ongoing task#</p>
+<p align="center">Check Update Progress with Task Monitor to find ongoing Task#</p>
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Get%20Task%20Number%20From%20Response%20for%20Update%20Progress.PNG)
 <p align="center">Get the task number from the response for Update Progress</p>
