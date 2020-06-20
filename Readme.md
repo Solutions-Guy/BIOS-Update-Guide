@@ -13,10 +13,9 @@
 * Method: [POST]
 * URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.EnterUpdateMode
 
-'''yml
-{
-}
-'''
+```JSON Payload
+{}
+```
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Enter%20BIOS%20Update%20Mode.PNG)
 <p align="center">Enter BIOS Update Mode</p>
