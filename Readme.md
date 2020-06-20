@@ -11,7 +11,7 @@
 **Enter BIOS Update Mode**
 * Enter BIOS update mode by posting the following request and expect to receive a “Successfully Completed Request” response.
 
-```JSON
+```Javascript
 Method: [POST]
 
 URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.EnterUpdateMode
@@ -28,8 +28,12 @@ JSON Payload:
 
 **Upload BIOS Image**
 * Upload the BIOS image by posting the following request and expect to receive a “Successfully Completed Request” response. The content type must be “multipart/form-data”. The body must be “Form”, and enter “bios” as name, select “File” and choose the BIOS image from your local drive. 
-* Method: [POST]
-* URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.Upload
+
+```JSON
+Method: [POST]
+
+URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.Upload
+```
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Upload%20BIOS%20Image.PNG)
 <p align="center">Upload BIOS Image</p>
 
