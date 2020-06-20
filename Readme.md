@@ -2,9 +2,8 @@
 * Check the current BIOS version by invoking the following request and expect to receive a JSON response with the BIOS version.
 * Method: [GET]
 * URL: https://$BMC_IP/redfish/v1/Systems/1
-![Check BIOS from Talend Chrome-based app](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20BIOS%20from%20Talend%20Chrome-based%20App.png)
-<center>Check BIOS from Talend Chrome-based app</center>
-
+![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20BIOS%20from%20Talend%20Chrome-based%20App.png)
+Check BIOS from Talend Chrome-based app
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20BIOS%20Version%20from%20Response.PNG)
 Confirm BIOS Version from Response
 
@@ -43,11 +42,11 @@ Confirm Uploaded BIOS Image successfully
 
 * All three attributes in the payload may also take false as values. Below is the alternative JSON Payload.
 
-JSON Payload:
+'''JSON Payload:
 {"PreserveME":false, 
  "PreserveNVRAM":false,
- "PreserveSMBIOS":false}
-
+ "PreserveSMBIOS":false}'''
+ 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Update%20BIOS.PNG)
 Update BIOS
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20Accepted%20Request.PNG)
