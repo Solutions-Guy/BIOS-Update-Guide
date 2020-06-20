@@ -15,6 +15,7 @@
 * JSON Payload: {}
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Enter%20BIOS%20Update%20Mode.PNG)
 <p align="center">Enter BIOS Update Mode</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20BIOS%20Mode%20from%20Response.PNG)
 <p align="center">Confirm BIOS Mode from Response</p>
 
@@ -24,8 +25,10 @@
 * URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.Upload
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Upload%20BIOS%20Image.PNG)
 <p align="center">Upload BIOS Image</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Uploading%20BIOS%20Image%20in%20Progress.PNG)
 <p align="center">Uploading BIOS Image in progress</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20Uploaded%20BIOS%20Imae%20Succesfully.PNG)
 <p align="center">Confirm Uploaded BIOS Image successfully</p>
 
@@ -51,6 +54,7 @@ JSON Payload:
  
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Update%20BIOS.PNG)
 <p align="center">Update BIOS</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20Accepted%20Request.PNG)
 <p align="center">Confirm Accepted Request</p>
 
@@ -64,12 +68,16 @@ JSON Payload:
 
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20Update%20Progress%20with%20Task%20Monitor%20to%20Find%20Ongoing%20Task%23.PNG)
 <p align="center">Check Update Progress with Task Monitor to find ongoing task#</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Get%20Task%20Number%20From%20Response%20for%20Update%20Progress.PNG)
 <p align="center">Get the task number from the response for Update Progress</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20Update%20Progress%20with%20Tast%20Service.PNG)
 <p align="center">Check Update Progress with Task Service</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20BIOS%20Update%20Progress%20(86%25).PNG)
 <p align="center">Check BIOS Update Progress (86%)</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Check%20BIOS%20Update%20Progress%20(100%25).PNG)
 <p align="center">Check BIOS Update Progress (100%)</p>
 
@@ -78,5 +86,6 @@ JSON Payload:
 * URL: https://172.31.32.138//redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Get%20BIOS%20Version.PNG)
 <p align="center">Get BIOS Version</p>
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Confirm%20BIOS%20Status.PNG)
 <p align="center">Confirm BIOS Status</p>
