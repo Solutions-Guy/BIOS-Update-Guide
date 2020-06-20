@@ -12,7 +12,11 @@
 * Enter BIOS update mode by posting the following request and expect to receive a “Successfully Completed Request” response.
 * Method: [POST]
 * URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.EnterUpdateMode
-* JSON Payload: {}
+
+'''Javascript
+{}
+'''
+
 ![](https://github.com/Solutions-Guy/BIOS-Update-Guide/blob/master/Enter%20BIOS%20Update%20Mode.PNG)
 <p align="center">Enter BIOS Update Mode</p>
 
