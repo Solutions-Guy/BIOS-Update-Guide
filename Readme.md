@@ -13,7 +13,9 @@
 
 ```JSON
 Method: [POST]
+
 URL: https://$BMC_IP/redfish/v1/UpdateService/SmcFirmwareInventory/BIOS/Actions/SmcFirmwareInventory.EnterUpdateMode
+
 JSON Payload:
 {}
 ```
